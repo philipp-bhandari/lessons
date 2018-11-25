@@ -10,7 +10,7 @@ def check_file(file, query):
     process = subprocess.Popen('cat "{}" | grep "{}"'.format(file, query), shell=True, stdout=subprocess.PIPE)
     stdout_list = process.communicate()
     return bool(stdout_list[0])
-#
+##
 
 def use_search(files):
     print('Введите строку:')
