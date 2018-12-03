@@ -13,8 +13,8 @@ def get_string(file):
 
 def is_ingredient(line, index):
     try:
-        if line[index]:  # Не придумал другого способа проверить существует ли элемент списка.
-            pass
+        if line[index]:  # Не придумал другого способа
+            pass         # проверить существует ли элемент списка.
         return True
     except IndexError:
         return False
