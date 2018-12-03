@@ -26,12 +26,12 @@ def main():
     try:
         logging.info("starting browser")
         OPTIONS = FirefoxOptions()
-        OPTIONS.add_argument("--headless")
+        #OPTIONS.add_argument("--headless")
         load_timeout = 1000
         browser = webdriver.Firefox(firefox_options=OPTIONS)
         browser.set_page_load_timeout(load_timeout)
         if os.path.exists('./accounting'):
-            urls = []
+            # urls = []
             with open("./accounting", "r") as file:
                 urls = [row.strip() for row in file]
             time.sleep(1)
@@ -43,8 +43,8 @@ def main():
                         browser.get(url)
                         time.sleep(1)
 
-                        name = browser.find_element_by_css_selector(title).text
-                        contact = browser.find_element_by_css_selector(phone).get_attribute('href')[5:]
+                        # name = browser.find_element_by_css_selector(title).text
+                        # contact = browser.find_element_by_css_selector(phone).get_attribute('href')[5:]
                         results = browser.page_source
                         soup = BeautifulSoup(results, 'html.parser')
                         name = soup.select(title)[0].string
