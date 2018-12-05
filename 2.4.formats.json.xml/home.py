@@ -15,9 +15,11 @@ class Reader:
         for item in data:
 
             if type == 'json':
-                words = item['description'].split()
+                lower_case = item['description'].lower()
+                words = lower_case.split()
             else:
-                words = item.text.split()
+                lower_case = item.text.lower()
+                words = lower_case.split()
             for word in words:
                 count = len(word)
                 if count > 6:
