@@ -11,13 +11,8 @@ def get_string(file):
     return file.readline().strip()
 
 
-def is_ingredient(line, index):
-    try:
-        if line[index]:  # Не придумал другого способа
-            pass         # проверить существует ли элемент списка.
-        return True
-    except IndexError:
-        return False
+def is_ingredient(line, size):
+    return len(line) == size
 
 
 def read_cookbook_file():
@@ -31,7 +26,7 @@ def read_cookbook_file():
             ingredient_line = split_line(get_string(file))
 
             cook_book[cook_name] = []
-            while is_ingredient(ingredient_line, 2):
+            while is_ingredient(ingredient_line, 3):
                 ingredient = {'ingredient_name': ingredient_line[0],
                               'quantity': ingredient_line[1],
                               'measure': ingredient_line[2]}

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7439ea32-2a81-46cf-89f0-8afde841b3f3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/work/headings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/keys" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/work/substitution.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/keys_copywr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/obrabotka.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/files.py" beforeDir="false" afterPath="$PROJECT_DIR$/files/files.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/work/substitution.py">
+        <entry file="file://$PROJECT_DIR$/files/files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+            <state relative-caret-position="210">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -80,13 +76,14 @@
         <option value="$PROJECT_DIR$/2.2.manager_context/homework.py" />
         <option value="$PROJECT_DIR$/parser/2gis.py" />
         <option value="$PROJECT_DIR$/Exceptions/functions.py" />
-        <option value="$PROJECT_DIR$/files/files.py" />
         <option value="$PROJECT_DIR$/work/obrabotka.py" />
         <option value="$PROJECT_DIR$/work/keys_copywr.txt" />
         <option value="$PROJECT_DIR$/work/phrases.txt" />
         <option value="$PROJECT_DIR$/work/headings" />
         <option value="$PROJECT_DIR$/work/keys" />
         <option value="$PROJECT_DIR$/work/substitution.py" />
+        <option value="$PROJECT_DIR$/work/phrases" />
+        <option value="$PROJECT_DIR$/files/files.py" />
       </list>
     </option>
   </component>
@@ -115,7 +112,7 @@
             <path>
               <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
               <item name="lessons" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -139,7 +136,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.substitution">
+  <component name="RunManager" selected="Python.files">
     <configuration name="ex1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lessons" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -247,9 +244,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.files" />
         <item itemvalue="Python.substitution" />
         <item itemvalue="Python.obrabotka" />
-        <item itemvalue="Python.files" />
         <item itemvalue="Python.functions" />
         <item itemvalue="Python.ex1" />
       </list>
@@ -371,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544016674724</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="wednesday 05/12/18">
+      <created>1544017164986</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1544017164986</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -392,7 +396,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49726775" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49726775" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -592,16 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/files/cookbook">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/files/files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="25" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/work/obrabotka.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -647,8 +641,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/work/substitution.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="270">
+          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work/phrases">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/cookbook">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
