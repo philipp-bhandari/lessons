@@ -1,17 +1,11 @@
 from selenium import webdriver
 from selenium.webdriver import FirefoxOptions
-# from PIL import Image
-# import sys
 import time
-# import pytesseract
-# import base64
-# import io
-# import datetime
-# import re
 import gc
 import logging
 import os
 from bs4 import BeautifulSoup
+from pprint import pprint
 
 
 def setup_logging():
@@ -37,19 +31,27 @@ def main():
             time.sleep(1)
             title = "h1[class=\"cardHeader__headerNameText\"]"
             phone = "a[class=\"contact__phonesItemLink\"]"
+            all_contacts = "div[class=\"contact__link _type_email\"]"
+
+
             with open("./result.csv", "a") as file:
                 for index, url in enumerate(urls):
                     try:
                         browser.get(url)
                         time.sleep(1)
-
                         # name = browser.find_element_by_css_selector(title).text
                         # contact = browser.find_element_by_css_selector(phone).get_attribute('href')[5:]
                         results = browser.page_source
+
                         soup = BeautifulSoup(results, 'html.parser')
                         name = soup.select(title)[0].string
                         contact = soup.select(phone)[0].string
-                        file.write("{};{}\n".format(name, contact))
+                        try:
+                            email = soup.select(all_contacts)[0].string
+                        except:
+                            email = ''
+
+                        file.write("{};{};{}\n".format(name, contact, email))
                         file.flush()
                         del name
                         del contact
@@ -73,9 +75,7 @@ def main():
                         urls.append("https://2gis.ru{}".format(h3.contents[0].attrs['href']))
                 except:
                     logging.exception(Exception)
-                del h3_objects
-                del soup
-                del results
+
                 gc.collect()
             time.sleep(1)
             with open("./accounting", "w") as file:
