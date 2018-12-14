@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7439ea32-2a81-46cf-89f0-8afde841b3f3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/2gis.py" beforeDir="false" afterPath="$PROJECT_DIR$/parser/2gis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/geckodriver.log" beforeDir="false" afterPath="$PROJECT_DIR$/parser/geckodriver.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/parser_2gis.log" beforeDir="false" afterPath="$PROJECT_DIR$/parser/parser_2gis.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser/result.csv" beforeDir="false" afterPath="$PROJECT_DIR$/parser/result.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vk api/homework.py" beforeDir="false" afterPath="$PROJECT_DIR$/vk api/homework.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,25 +25,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vk api/homework.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="314">
+              <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parser/2gis.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,6 +61,7 @@
       <find>quantity</find>
       <find>show_result_2</find>
       <find />
+      <find>for friend in self.friend_list</find>
     </findStrings>
     <replaceStrings>
       <replace>read_cookbook_file</replace>
@@ -119,8 +105,8 @@
         <option value="$PROJECT_DIR$/3.1.http.requests/texts/ES" />
         <option value="$PROJECT_DIR$/3.1.http.requests/homework.py" />
         <option value="$PROJECT_DIR$/vk api/readme.md" />
-        <option value="$PROJECT_DIR$/vk api/homework.py" />
         <option value="$PROJECT_DIR$/parser/2gis.py" />
+        <option value="$PROJECT_DIR$/vk api/homework.py" />
       </list>
     </option>
   </component>
@@ -178,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.2gis">
+  <component name="RunManager" selected="Python.homework (1)">
     <configuration name="2gis" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="lessons" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -286,8 +272,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.2gis" />
         <item itemvalue="Python.homework (1)" />
+        <item itemvalue="Python.2gis" />
         <item itemvalue="Python.homework" />
         <item itemvalue="Python.home" />
         <item itemvalue="Python.files" />
@@ -445,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544476069482</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Добавил email в парсинг">
+      <created>1544701123067</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1544701123067</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView" selected-index="2">
@@ -461,12 +454,12 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18797815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18797815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49726775" visible="true" weight="0.32937366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49726775" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39956802" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,7 +527,8 @@
     <MESSAGE value="Доработки" />
     <MESSAGE value="wednesday 05/12/18" />
     <MESSAGE value="update homework" />
-    <option name="LAST_COMMIT_MESSAGE" value="update homework" />
+    <MESSAGE value="Добавил email в парсинг" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил email в парсинг" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/paths/find_procedure.py">
@@ -738,6 +732,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/parser/result.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vk api/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -748,29 +749,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vk api/homework.py">
+    <entry file="file://$PROJECT_DIR$/parser/2gis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="300">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
           <folding>
-            <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/parser/result.csv">
+    <entry file="file://$PROJECT_DIR$/vk api/homework.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/parser/2gis.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="47" column="52" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
+        <state relative-caret-position="314">
+          <caret line="57" column="33" lean-forward="true" selection-start-line="57" selection-start-column="33" selection-end-line="57" selection-end-column="33" />
           <folding>
-            <element signature="e#0#30#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
           </folding>
         </state>
       </provider>

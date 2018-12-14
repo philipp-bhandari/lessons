@@ -17,9 +17,11 @@ APP_ID = 6777613
 #     'response_type':              'token',
 #     'v':                          '5.92'
 # }
+#
+# print(AUTH_URL + urlencode(auth_data))
 
 
-TOKEN = '48302be079021fa288200c0d8b83051690d2abad3fc01af1aea24c3a1b8fe1b069718b9a1e49c75cc9078'
+TOKEN = 'cbe61b01f88856a40d5181c96cad726e0848f2ab9f84b2ba9560d765c5ca096b51ee34120cc7f532a8219'
 
 
 class VkUser:
@@ -44,16 +46,23 @@ class VkUser:
             self.friend_list = []
 
     def __and__(self, other):
-        mutual_friends = []
+        self_friends = set(self.friend_list)
+        other_friends = set(other.friend_list)
+        mutual_friends = self_friends.intersection(other_friends)
+        users_list = []
         counter = 0
-        for friend in self.friend_list:
-            if friend in other.friend_list:
-                counter += 1
-                print(f'Общих друзей найдено: {counter}')
-                user = VkUser(friend)
-                time.sleep(1)  # Может быть проблема с количеством запросов к API, можно поиграть со временем.
-                mutual_friends.append(user)
-        return mutual_friends
+
+        for friend in mutual_friends:
+            counter += 1
+            print(f'Общих друзей найдено: {counter}')
+            user = VkUser(friend)
+            time.sleep(1)
+            users_list.append(user)
+        return users_list
+
+    def __str__(self):
+        string = f'ID: {self.id}\nИмя: {self.name}\nФамилия: {self.last_name}\n***\n'
+        return string
 
 
 first_user = VkUser('2181463')
@@ -64,9 +73,7 @@ mutual_list = first_user & second_user
 
 print(f'\nОбщие друзья для {first_user.name} {first_user.last_name} и {second_user.name} {second_user.last_name}:\n')
 for user in mutual_list:
-    print(user.id)
-    print(user.name, user.last_name)
-    print('*' * 3)
+    print(user)
 
 
 
